@@ -1,102 +1,86 @@
-<p align="center">
-  <a href="https://www.gov.br/prf/pt-br/acesso-a-informacao/dados-abertos">
-    <img src="files/dadosabertos.png" alt="OpenData logo" width="200" height="165">
-  </a>
-</p>
+<div align="center">
+  <img src="file/logorainel.png"><br>
+</div>
 
-<h3 align="center">Open Data - GOV.BR</h3>
+-----------------
 
-<p align="center">
-    Open data on traffic accidents that occurred on federal highways in Brazil.
-  <br>
-  <a href="https://www.gov.br/prf/pt-br/acesso-a-informacao/dados-abertos"><strong>Explore Open Data - GOV.BR »</strong></a>
-  <br>
-  <br>
-  <a href="https://medium.com/@raineldias88/there-are-more-traffic-accidents-on-this-road-7933d33476d3">Blog</a>
-</p>
+# rainel: powerful data science and artificial intelligence toolkit
+[![PyPI Latest Release](https://img.shields.io/pypi/v/rainel?style=plastic)](https://pypi.org/project/rainel/)
+[![Package Status](https://img.shields.io/pypi/status/rainel?style=plastic)](https://pypi.org/project/rainel/)
+[![License](https://img.shields.io/pypi/l/rainel?style=plastic)](https://github.com/RainelDias88/packagePYPI/blob/main/rainel/license.t)
+[![Downloads](https://static.pepy.tech/badge/rainel/month)](https://pepy.tech/project/rainel)
 
+## What is it?
 
+**rainel** is a Python package that provides useful tools for Data Science and Artificial Intelligence.
 
-Our goal is to use the Open Data of the Federal Government of Brazil to answer questions that can help people who use the federal highways of the Federal District of Brazil.
-<p align="center">
-    <a href="https://pt.wikipedia.org/wiki/Bras%C3%ADlia">
-      <img src="files/brasilia.gif" alt="Brasília-DF" width="200" height="165">
-    </a>
-  </p>
+## Where to get it
+The source code is currently hosted on GitHub at:
+https://github.com/RainelDias88/packagePYPI
 
-## Table of contents
+Binary installers for the latest released version are available at the [Python
+Package Index (PyPI)](https://pypi.org/project/rainel/).
 
-- [Quick start](#quick-start)
-- [Status](#status)
-- [Motivation](#motivation)
-- [Files](#files)
-- [Results](#results)
-- [Creator](#creator)
-- [Thanks](#thanks)
+```sh
+# PyPI
+pip install rainel
+```
 
+```sh
+class rainel.Gaussian(mu=0, sigma=1)
+```
+Gaussian distribution class for calculating and visualizing a Gaussian distribution.
+```sh
+        Parameters: 
+        mu:  The mean value of the distribution
+        sigma: Standard deviation of the distribution
+            
+        Attributes:
+            mean: mu
+            stdev: sigma
+            data: list of floats extracted from the data file
 
-## Quick start
+        Methods:
+            read_data_file(file_name)		Read in data from a txt file. The txt file should have one number (float) per line. The numbers are stored in the data attribute.
 
-Several quick start options are available:
+        calculate_mean()		Return mean of the data set.
 
-- Clone the repo: `git clone https://github.com/RainelDias88/Traffic-accidents-in-the-Federal-District-of-Brazil`
-- [Install Jupyter Notebook](https://jupyter.org/install)
-- [Install Python](https://www.python.org/downloads/)
-- [Install Anaconda](https://www.anaconda.com/products/distribution)
+        calculate_stdev(sample=True)		Return standard deviation of the data set. sample (bool): whether the data represents a sample or population
 
+        plot_histogram()		Output a histogram of the instance variable data using matplotlib pyplot library.
 
-## Status
+        pdf(x)	Return probability density function output. x (float): point for calculating the probability density function
 
-[![Languages](https://img.shields.io/github/languages/count/RainelDias88/Traffic-accidents-in-the-Federal-District-of-Brazil)]
+        plot_histogram_pdf(n_spaces=50) Return x and y values for the pdf
 
-[![Top Language](https://img.shields.io/github/languages/top/RainelDias88/Traffic-accidents-in-the-Federal-District-of-Brazil)]
-
-[![Repo Size](https://img.shields.io/github/repo-size/Raineldias88/Traffic-accidents-in-the-Federal-District-of-Brazil)]
-
-[![Build Status](https://img.shields.io/github/actions/workflow/status/twbs/bootstrap/js.yml?branch=main&label=JS%20Tests&logo=github)](https://github.com/twbs/bootstrap/actions?query=workflow%3AJS+Tests+branch%3Amain)
-
-
-## Motivation
-
-The initial motivation was the fact that I frequently use the federal highways that pass through the surroundings of the Federal District. And since I'm very curious, I decided to look for information about the accidents that happen in them. My intention is to gather information that will help reduce the number of traffic accidents and allow for safer traffic for everyone.
-
-- What are the main federal highways?
-- On which road do most accidents happen?
-- What is the type of accident that happens the most?
-- What month of the year has the most accidents?
-- What time of day does most accidents happen?
-- On which holiday does the most accident happen?
-- In which km does the most accident happen on each road?
+```
 
 
-## Files
+```sh
+class rainel.Binomial(prob=.5, size=20)
+```
+Binomial distribution class for calculating and visualizing a Binomial distribution.
+```sh
+        Parameters: 
+        prob:  representing the probability of an event occurring
 
-- 3 .csv files containing data on traffic accidents recorded by the Federal Highway Police from 2019 to 2020.
-- 11 exploratory notebook in the search for data. In him there are Markdown cells to assist in walking through the thought process for individual steps.
-- 1 .py files. It is necessary to obtain the final model used to predict the day that there will be more serious accidents.
+        size: number of trials
+            
+        Attributes:
+            p: prob
+            n: size
 
+        Methods:
+            calculate_mean()		Return mean from p and n.
 
-## Results
+        calculate_stdev()		Return standard deviation of the data set.
 
-The main findings of the code can be found at the post available [`here`](https://medium.com/@raineldias88/there-are-more-traffic-accidents-on-this-road-7933d33476d3)
+        replace_stats_with_data() Return p and n value from the data set
 
+        plot_bar()		Output a histogram of the instance variable data using matplotlib pyplot library.
 
-## Creator
+        pdf(k)	Return probability density calculator for the gaussian distribution. x (float): point for calculating the probability density function
 
-**Felipe Rainel**
+        plot_bar_pdf()		Plot the pdf of the binomial distribution
 
-- <https://medium.com/@raineldias88>
-
-- <https://www.linkedin.com/in/felipe-rainel/>
-
-- E-mail: raineldias88@gmail.com
-
-
-## Thanks
-
-<a href="https://www.gov.br/pt-br">
-  <img src="files/gov.png" alt="GovBR" width="192" height="42">
-</a>
-
-
-Thanks to [br](https://www.gov.br/pt-br) for providing us with the actual data used in this project!
+```
