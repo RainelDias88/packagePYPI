@@ -26,6 +26,8 @@ Package Index (PyPI)](https://pypi.org/project/rainel/).
 pip install rainel
 ```
 
+-----------------
+
 ```sh
 class rainel.Gaussian(mu=0, sigma=1)
 ```
@@ -56,6 +58,7 @@ Gaussian distribution class for calculating and visualizing a Gaussian distribut
 
 ```
 
+-----------------
 
 ```sh
 class rainel.Binomial(prob=.5, size=20)
