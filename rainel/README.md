@@ -1,7 +1,7 @@
 <div align="center">
-  <img src="https://github.com/RainelDias88/packagePYPI/tree/main/file/logoraineldataia.png"><br>
+  <img src="https://github.com/RainelDias88/packagePYPI/blob/6a9709f6baaa6ce0051cd0e37ac8a35737fb923d/file/logoraineldataia.png"><br>
 </div>
-
+https://github.com/RainelDias88/packagePYPI/blob/6a9709f6baaa6ce0051cd0e37ac8a35737fb923d/file/logoraineldataia.png
 -----------------
 
 # rainel: powerful data science and artificial intelligence toolkit
