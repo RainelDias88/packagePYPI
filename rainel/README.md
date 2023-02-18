@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="file/logorainel.png"><br>
+  <img src="https://github.com/RainelDias88/packagePYPI/tree/main/file/logoraineldataia.png"><br>
 </div>
 
 -----------------
@@ -30,10 +30,11 @@ pip install rainel
 class rainel.Gaussian(mu=0, sigma=1)
 ```
 Gaussian distribution class for calculating and visualizing a Gaussian distribution.
+
 ```sh
         Parameters: 
-        mu:  The mean value of the distribution
-        sigma: Standard deviation of the distribution
+            mu:  The mean value of the distribution
+            sigma: Standard deviation of the distribution
             
         Attributes:
             mean: mu
@@ -41,17 +42,17 @@ Gaussian distribution class for calculating and visualizing a Gaussian distribut
             data: list of floats extracted from the data file
 
         Methods:
-            read_data_file(file_name)		Read in data from a txt file. The txt file should have one number (float) per line. The numbers are stored in the data attribute.
+            read_data_file(file_name)	Read in data from a txt file. The txt file should have one number (float) per line. The numbers are stored in the data attribute.
 
-        calculate_mean()		Return mean of the data set.
+            calculate_mean()    Return mean of the data set.
 
-        calculate_stdev(sample=True)		Return standard deviation of the data set. sample (bool): whether the data represents a sample or population
+            calculate_stdev(sample=True)	Return standard deviation of the data set. sample (bool): whether the data represents a sample or population.
 
-        plot_histogram()		Output a histogram of the instance variable data using matplotlib pyplot library.
+            plot_histogram()    Output a histogram of the instance variable data using matplotlib pyplot library.
 
-        pdf(x)	Return probability density function output. x (float): point for calculating the probability density function
+            pdf(x)  Return probability density function output. x (float): point for calculating the probability density function.
 
-        plot_histogram_pdf(n_spaces=50) Return x and y values for the pdf
+            plot_histogram_pdf(n_spaces=50) Return x and y values for the pdf
 
 ```
 
@@ -60,27 +61,27 @@ Gaussian distribution class for calculating and visualizing a Gaussian distribut
 class rainel.Binomial(prob=.5, size=20)
 ```
 Binomial distribution class for calculating and visualizing a Binomial distribution.
+
 ```sh
         Parameters: 
-        prob:  representing the probability of an event occurring
+            prob:  representing the probability of an event occurring
 
-        size: number of trials
+            size: number of trials
             
         Attributes:
             p: prob
             n: size
 
         Methods:
-            calculate_mean()		Return mean from p and n.
+            calculate_mean()	Return mean from p and n.
 
-        calculate_stdev()		Return standard deviation of the data set.
+            calculate_stdev()	Return standard deviation of the data set.
 
-        replace_stats_with_data() Return p and n value from the data set
+            replace_stats_with_data()   Return p and n value from the data set.
 
-        plot_bar()		Output a histogram of the instance variable data using matplotlib pyplot library.
+            plot_bar()  Output a histogram of the instance variable data using matplotlib pyplot library.
 
-        pdf(k)	Return probability density calculator for the gaussian distribution. x (float): point for calculating the probability density function
+            pdf(k)  Return probability density calculator for the gaussian distribution. x (float): point for calculating the probability density function.
 
-        plot_bar_pdf()		Plot the pdf of the binomial distribution
-
+            plot_bar_pdf()  Plot the pdf of the binomial distribution
 ```
